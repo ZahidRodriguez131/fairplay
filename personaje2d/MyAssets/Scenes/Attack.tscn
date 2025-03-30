@@ -1,0 +1,40 @@
+[gd_scene load_steps=6 format=3 uid="uid://dcfqws7bsn1cs"]
+
+[ext_resource type="Script" uid="uid://6j2c1sirwglc" path="res://MyAssets/Scenes/attack.gd" id="1_tdnrb"]
+[ext_resource type="Texture2D" uid="uid://ce0dxkh7yw2v0" path="res://MyAssets/Sprites/_SwordFoosh.png" id="2_pi5bj"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_t7jih"]
+atlas = ExtResource("2_pi5bj")
+region = Rect2(0, 0, 66, 36)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_cv6hw"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_t7jih")
+}],
+"loop": true,
+"name": &"SwordFoosh",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oypme"]
+size = Vector2(28, 18)
+
+[node name="Attack" type="StaticBody2D"]
+script = ExtResource("1_tdnrb")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(-2.38419e-07, 0)
+scale = Vector2(0.643939, 0.597222)
+sprite_frames = SubResource("SpriteFrames_cv6hw")
+animation = &"SwordFoosh"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(4, 1)
+shape = SubResource("RectangleShape2D_oypme")
+
+[node name="VisibleOnScreenNotifier2D" type="VisibleOnScreenNotifier2D" parent="."]
+
+[connection signal="screen_exited" from="VisibleOnScreenNotifier2D" to="." method="_on_visible_on_screen_notifier_2d_screen_exited"]
