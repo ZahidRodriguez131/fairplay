@@ -1,0 +1,128 @@
+[gd_scene load_steps=28 format=3 uid="uid://dspteai47i3x5"]
+
+[ext_resource type="Texture2D" uid="uid://ccc5j4vcptkn3" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_000.png" id="1_mk1k5"]
+[ext_resource type="Script" uid="uid://ceecn7r17r74s" path="res://enemigo.gd" id="1_y22wv"]
+[ext_resource type="Texture2D" uid="uid://dl8t367hvswqp" path="res://assets/Enemy/Fall/0_Skeleton_Crusader_Falling Down_000.png" id="2_5ndga"]
+[ext_resource type="Texture2D" uid="uid://7xl7j1hf1mpt" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_001.png" id="2_y22wv"]
+[ext_resource type="Texture2D" uid="uid://b2x1xlaachjg6" path="res://assets/Enemy/Fall/0_Skeleton_Crusader_Falling Down_001.png" id="3_01y73"]
+[ext_resource type="Texture2D" uid="uid://pye8sltmku6i" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_002.png" id="3_uubak"]
+[ext_resource type="Texture2D" uid="uid://cbckd4we5jqtr" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_003.png" id="4_dumfu"]
+[ext_resource type="Texture2D" uid="uid://yk2iq3j55hp5" path="res://assets/Enemy/Fall/0_Skeleton_Crusader_Falling Down_002.png" id="4_ydsxq"]
+[ext_resource type="Texture2D" uid="uid://de6c47vhawiaj" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_004.png" id="5_101al"]
+[ext_resource type="Texture2D" uid="uid://bqbh3pk2vb7sh" path="res://assets/Enemy/Fall/0_Skeleton_Crusader_Falling Down_003.png" id="5_gbaay"]
+[ext_resource type="Texture2D" uid="uid://ccbn0y32d8i8g" path="res://assets/Enemy/Fall/0_Skeleton_Crusader_Falling Down_004.png" id="6_en4dv"]
+[ext_resource type="Texture2D" uid="uid://bho8hymumhn5i" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_005.png" id="6_lik12"]
+[ext_resource type="Texture2D" uid="uid://bdkhnu3mljui2" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_006.png" id="7_eoj2m"]
+[ext_resource type="Texture2D" uid="uid://be5grwrm138o1" path="res://assets/Enemy/Fall/0_Skeleton_Crusader_Falling Down_005.png" id="7_idqvv"]
+[ext_resource type="Texture2D" uid="uid://i7a23c2pj2q6" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_007.png" id="8_5ndga"]
+[ext_resource type="Texture2D" uid="uid://ej56tnjrnw3b" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_008.png" id="9_01y73"]
+[ext_resource type="Texture2D" uid="uid://dyhm84jes0bv2" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_009.png" id="10_ydsxq"]
+[ext_resource type="Texture2D" uid="uid://c4l2syku812sr" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_010.png" id="11_gbaay"]
+[ext_resource type="Texture2D" uid="uid://bss53q8bwhr4i" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_011.png" id="12_en4dv"]
+[ext_resource type="Texture2D" uid="uid://dq417tm2mn4vq" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_012.png" id="13_idqvv"]
+[ext_resource type="Texture2D" uid="uid://b8us5rqbjvivm" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_013.png" id="14_81t6e"]
+[ext_resource type="Texture2D" uid="uid://coq70roq6kjri" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_014.png" id="15_hxvsr"]
+[ext_resource type="Texture2D" uid="uid://crkjsmmxh6jty" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_015.png" id="16_eo74s"]
+[ext_resource type="Texture2D" uid="uid://cofvl8gra6hcw" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_016.png" id="17_kj881"]
+[ext_resource type="Texture2D" uid="uid://dvhjcki7sof26" path="res://assets/Enemy/Idle/0_Skeleton_Crusader_Idle_017.png" id="18_7qwvi"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_pi7j1"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_5ndga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_01y73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_ydsxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_gbaay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_en4dv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_idqvv")
+}],
+"loop": true,
+"name": &"fall",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_mk1k5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_y22wv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_uubak")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_dumfu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_101al")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_lik12")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_eoj2m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_5ndga")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_01y73")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ydsxq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_gbaay")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_en4dv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_idqvv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_81t6e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_hxvsr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_eo74s")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_kj881")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_7qwvi")
+}],
+"loop": true,
+"name": &"idle",
+"speed": 14.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0gkka"]
+size = Vector2(212, 475)
+
+[node name="Enemigo" type="CharacterBody2D" groups=["enemie"]]
+script = ExtResource("1_y22wv")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_pi7j1")
+animation = &"fall"
+flip_h = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(11, 61)
+shape = SubResource("RectangleShape2D_0gkka")

@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=3 uid="uid://blfrheukqha1"]
+
+[ext_resource type="Texture2D" uid="uid://die8pnvd8jmrp" path="res://assets/Generator/Head.png" id="1_rv8or"]
+[ext_resource type="Script" uid="uid://bgm41mp2m07kq" path="res://generador.gd" id="1_wrwq3"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wrwq3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_rv8or")
+}],
+"loop": true,
+"name": &"generar",
+"speed": 5.0
+}]
+
+[node name="Generador" type="Node2D"]
+script = ExtResource("1_wrwq3")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+sprite_frames = SubResource("SpriteFrames_wrwq3")
+animation = &"generar"
+flip_h = true
