@@ -1,0 +1,155 @@
+[gd_scene load_steps=11 format=3 uid="uid://4rheneyrg6wu"]
+
+[ext_resource type="Texture2D" uid="uid://ci0lpylfbuay5" path="res://Sprites/Escenario/Fondo/76689a5d-cc01-4b9e-8d43-17334854d4dc.png" id="1_n62ab"]
+[ext_resource type="PackedScene" uid="uid://ltgpyge8svvd" path="res://Escenas/character_body_2d.tscn" id="2_snkrr"]
+[ext_resource type="PackedScene" uid="uid://bqdpd7vxujwjt" path="res://Escenas/plataforma_circulo.tscn" id="3_4ml00"]
+[ext_resource type="PackedScene" uid="uid://cwgc11ikyp2ey" path="res://Escenas/plataforma_cuadrado.tscn" id="4_vx5ta"]
+[ext_resource type="PackedScene" uid="uid://m83qpvom6pwt" path="res://Escenas/plataforma_triangulo.tscn" id="5_hgh3j"]
+[ext_resource type="Script" uid="uid://ticc5kyl2m1c" path="res://Escenas/volver_selector_nvl_2.gd" id="7_eyd85"]
+[ext_resource type="Texture2D" uid="uid://dyyvjiv66w7rp" path="res://Sprites/Botones/682d5062-6839-4a45-9f2d-f4f6a787401a.png" id="8_r2mg4"]
+[ext_resource type="PackedScene" uid="uid://djrk6elbb5mvy" path="res://Escenas/muro.tscn" id="9_b6ll8"]
+[ext_resource type="PackedScene" uid="uid://dkpj1c1670ssq" path="res://tiles/metaNvl2.tscn" id="9_n62ab"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yhtt3"]
+size = Vector2(63, 63)
+
+[node name="Nivel2" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(593.5, 326)
+scale = Vector2(38.0625, 21.0417)
+texture = ExtResource("1_n62ab")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_snkrr")]
+position = Vector2(27, 230)
+
+[node name="PlataformaCirculo11" parent="." instance=ExtResource("3_4ml00")]
+position = Vector2(781, 449)
+
+[node name="PlataformaCirculo15" parent="." instance=ExtResource("3_4ml00")]
+position = Vector2(652, 448)
+
+[node name="PlataformaCirculo12" parent="." instance=ExtResource("3_4ml00")]
+position = Vector2(106, 255)
+
+[node name="PlataformaCirculo13" parent="." instance=ExtResource("3_4ml00")]
+position = Vector2(59, 255)
+
+[node name="PlataformaCirculo14" parent="." instance=ExtResource("3_4ml00")]
+position = Vector2(12, 255)
+
+[node name="PlataformaCuadrado" parent="." instance=ExtResource("4_vx5ta")]
+position = Vector2(474, 551)
+
+[node name="PlataformaCuadrado2" parent="." instance=ExtResource("4_vx5ta")]
+position = Vector2(523, 551)
+
+[node name="PlataformaCuadrado3" parent="." instance=ExtResource("4_vx5ta")]
+position = Vector2(907, 395)
+
+[node name="PlataformaCuadrado4" parent="." instance=ExtResource("4_vx5ta")]
+position = Vector2(956, 395)
+
+[node name="PlataformaCuadrado5" parent="." instance=ExtResource("4_vx5ta")]
+position = Vector2(1004, 395)
+
+[node name="PlataformaCuadrado6" parent="." instance=ExtResource("4_vx5ta")]
+position = Vector2(1052, 395)
+
+[node name="PlataformaCuadrado19" parent="." instance=ExtResource("4_vx5ta")]
+position = Vector2(1101, 347)
+
+[node name="PlataformaCuadrado15" parent="." instance=ExtResource("4_vx5ta")]
+position = Vector2(610, 283)
+
+[node name="PlataformaCuadrado16" parent="." instance=ExtResource("4_vx5ta")]
+position = Vector2(659, 283)
+
+[node name="PlataformaCuadrado17" parent="." instance=ExtResource("4_vx5ta")]
+position = Vector2(707, 283)
+
+[node name="PlataformaCuadrado18" parent="." instance=ExtResource("4_vx5ta")]
+position = Vector2(755, 283)
+
+[node name="PlataformaCuadrado7" parent="." instance=ExtResource("4_vx5ta")]
+position = Vector2(22, 551)
+
+[node name="PlataformaCuadrado8" parent="." instance=ExtResource("4_vx5ta")]
+position = Vector2(71, 551)
+
+[node name="PlataformaCuadrado9" parent="." instance=ExtResource("4_vx5ta")]
+position = Vector2(119, 551)
+
+[node name="PlataformaCuadrado10" parent="." instance=ExtResource("4_vx5ta")]
+position = Vector2(167, 551)
+
+[node name="PlataformaTriangulo" parent="." instance=ExtResource("5_hgh3j")]
+position = Vector2(154, 270)
+
+[node name="PlataformaTriangulo4" parent="." instance=ExtResource("5_hgh3j")]
+position = Vector2(292, 270)
+
+[node name="PlataformaTriangulo2" parent="." instance=ExtResource("5_hgh3j")]
+position = Vector2(200, 270)
+
+[node name="PlataformaTriangulo3" parent="." instance=ExtResource("5_hgh3j")]
+position = Vector2(246, 270)
+
+[node name="PlataformaTriangulo5" parent="." instance=ExtResource("5_hgh3j")]
+position = Vector2(338, 270)
+
+[node name="PlataformaTriangulo6" parent="." instance=ExtResource("5_hgh3j")]
+position = Vector2(384, 270)
+
+[node name="PlataformaTriangulo7" parent="." instance=ExtResource("5_hgh3j")]
+position = Vector2(430, 270)
+
+[node name="PlataformaTriangulo8" parent="." instance=ExtResource("5_hgh3j")]
+position = Vector2(476, 270)
+
+[node name="PlataformaTriangulo9" parent="." instance=ExtResource("5_hgh3j")]
+position = Vector2(293, 532)
+
+[node name="PlataformaTriangulo10" parent="." instance=ExtResource("5_hgh3j")]
+position = Vector2(339, 532)
+
+[node name="PlataformaTriangulo11" parent="." instance=ExtResource("5_hgh3j")]
+position = Vector2(385, 532)
+
+[node name="VolverSelectorNvl2" type="Area2D" parent="."]
+position = Vector2(48, 42)
+script = ExtResource("7_eyd85")
+
+[node name="Sprite2D" type="Sprite2D" parent="VolverSelectorNvl2"]
+position = Vector2(6, 6)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("8_r2mg4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VolverSelectorNvl2"]
+position = Vector2(5.5, 4.5)
+shape = SubResource("RectangleShape2D_yhtt3")
+
+[node name="Muro" parent="." instance=ExtResource("9_b6ll8")]
+position = Vector2(-105, -180)
+
+[node name="Muro2" parent="." instance=ExtResource("9_b6ll8")]
+position = Vector2(1263, -171)
+
+[node name="Muro3" parent="." instance=ExtResource("9_b6ll8")]
+position = Vector2(1006, 762)
+rotation = 1.57723
+
+[node name="Muro6" parent="." instance=ExtResource("9_b6ll8")]
+position = Vector2(1254, 756)
+rotation = 1.57723
+
+[node name="Muro4" parent="." instance=ExtResource("9_b6ll8")]
+position = Vector2(1267, -136)
+rotation = 1.57723
+
+[node name="Muro5" parent="." instance=ExtResource("9_b6ll8")]
+position = Vector2(1007, -139)
+rotation = 1.57723
+
+[node name="MetaNvl1" parent="." instance=ExtResource("9_n62ab")]
+position = Vector2(47, 489)

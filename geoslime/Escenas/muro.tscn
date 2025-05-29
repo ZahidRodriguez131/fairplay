@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://djrk6elbb5mvy"]
+
+[ext_resource type="Script" uid="uid://ddo57emjptojh" path="res://muro.gd" id="1_wmsan"]
+[ext_resource type="Texture2D" uid="uid://b7sm35u6up2fi" path="res://Sprites/Escenario/Suelo/33d34f9d-444b-4ee1-ab90-9a4369391eac.png" id="2_iyybx"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_frp3h"]
+size = Vector2(43, 1170)
+
+[node name="Muro" type="Area2D"]
+script = ExtResource("1_wmsan")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0, 550)
+scale = Vector2(1, 23.9167)
+texture = ExtResource("2_iyybx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 561)
+shape = SubResource("RectangleShape2D_frp3h")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

@@ -1,0 +1,17 @@
+[gd_scene load_steps=4 format=3 uid="uid://m83qpvom6pwt"]
+
+[ext_resource type="PackedScene" uid="uid://cxkqdbx5816hq" path="res://Escenas/plataforma_base.tscn" id="1_7xmb0"]
+[ext_resource type="Texture2D" uid="uid://bhgjanx6d37vj" path="res://Sprites/Escenario/Suelo/d88d067c-988a-4a54-916b-b36257d1a44d.png" id="2_djyvr"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mh4w1"]
+size = Vector2(28, 29)
+
+[node name="PlataformaTriangulo" instance=ExtResource("1_7xmb0")]
+forma = 1
+
+[node name="CollisionShape2D" parent="." index="0"]
+position = Vector2(0, 9.5)
+shape = SubResource("RectangleShape2D_mh4w1")
+
+[node name="Sprite2D" parent="." index="1"]
+texture = ExtResource("2_djyvr")

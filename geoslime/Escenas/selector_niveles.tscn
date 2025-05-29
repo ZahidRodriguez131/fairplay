@@ -1,0 +1,87 @@
+[gd_scene load_steps=13 format=3 uid="uid://cqtdogydlrcpp"]
+
+[ext_resource type="Texture2D" uid="uid://ci0lpylfbuay5" path="res://Sprites/Escenario/Fondo/76689a5d-cc01-4b9e-8d43-17334854d4dc.png" id="1_4mng5"]
+[ext_resource type="Script" uid="uid://egegnlyuohoy" path="res://Escenas/area_2d.gd" id="2_qujn7"]
+[ext_resource type="Texture2D" uid="uid://drmt6yljihxog" path="res://Sprites/Botones/Nivel1.png" id="2_sbawv"]
+[ext_resource type="Texture2D" uid="uid://mb47iy8wfl3i" path="res://Sprites/Botones/b76419e6-ca91-4f6f-af44-0cceebcddd83.png" id="3_21nkd"]
+[ext_resource type="Texture2D" uid="uid://bfiu77b2rnimj" path="res://Sprites/Botones/Nivel3.png" id="4_sta4d"]
+[ext_resource type="Script" uid="uid://cxipj2rmhxot7" path="res://Escenas/nivel_2.gd" id="4_vggql"]
+[ext_resource type="Texture2D" uid="uid://t3g4rcby58m0" path="res://Sprites/Botones/dfcffd5e-a762-4bf5-b424-706c2c4003d8.png" id="5_cmpj6"]
+[ext_resource type="Texture2D" uid="uid://dyyvjiv66w7rp" path="res://Sprites/Botones/682d5062-6839-4a45-9f2d-f4f6a787401a.png" id="6_qujn7"]
+[ext_resource type="Script" uid="uid://cm7eqf3k1je6u" path="res://Escenas/nivel_3.gd" id="6_tr5ku"]
+[ext_resource type="Script" uid="uid://c7863usx6spu" path="res://Escenas/nivel_4.gd" id="8_0ucav"]
+[ext_resource type="Script" uid="uid://bvtn6kkd1x83w" path="res://Escenas/volver_menu.gd" id="10_yrxbw"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_vggql"]
+size = Vector2(148.5, 148)
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(573, 326)
+scale = Vector2(24.7292, 14.25)
+texture = ExtResource("1_4mng5")
+
+[node name="Nivel1" type="Area2D" parent="."]
+position = Vector2(148, 350)
+script = ExtResource("2_qujn7")
+
+[node name="Sprite2D" type="Sprite2D" parent="Nivel1"]
+position = Vector2(34.5, -34.5)
+scale = Vector2(2.07813, 2.07813)
+texture = ExtResource("2_sbawv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nivel1"]
+position = Vector2(31.75, -32)
+shape = SubResource("RectangleShape2D_vggql")
+
+[node name="Nivel2" type="Area2D" parent="."]
+position = Vector2(451, 320)
+script = ExtResource("4_vggql")
+
+[node name="Sprite2D" type="Sprite2D" parent="Nivel2"]
+position = Vector2(-8.74999, -1.74999)
+scale = Vector2(2.14844, 2.14844)
+texture = ExtResource("3_21nkd")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nivel2"]
+position = Vector2(-7, -1)
+shape = SubResource("RectangleShape2D_vggql")
+
+[node name="Nivel3" type="Area2D" parent="."]
+position = Vector2(668, 280)
+script = ExtResource("6_tr5ku")
+
+[node name="Sprite2D" type="Sprite2D" parent="Nivel3"]
+position = Vector2(37.5, 37.5)
+scale = Vector2(2.17188, 2.17188)
+texture = ExtResource("4_sta4d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nivel3"]
+position = Vector2(37, 37)
+shape = SubResource("RectangleShape2D_vggql")
+
+[node name="Nivel4" type="Area2D" parent="."]
+position = Vector2(951, 321)
+script = ExtResource("8_0ucav")
+
+[node name="Sprite2D" type="Sprite2D" parent="Nivel4"]
+position = Vector2(-2, -6)
+scale = Vector2(2.14063, 2.14063)
+texture = ExtResource("5_cmpj6")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Nivel4"]
+shape = SubResource("RectangleShape2D_vggql")
+
+[node name="VolverMenu" type="Area2D" parent="."]
+position = Vector2(80, 62)
+script = ExtResource("10_yrxbw")
+
+[node name="Sprite2D" type="Sprite2D" parent="VolverMenu"]
+position = Vector2(12, 12)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("6_qujn7")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VolverMenu"]
+position = Vector2(9.5, 9)
+shape = SubResource("RectangleShape2D_vggql")

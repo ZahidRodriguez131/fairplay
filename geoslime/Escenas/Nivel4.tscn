@@ -1,0 +1,241 @@
+[gd_scene load_steps=11 format=3 uid="uid://c0dmhjg6hblyh"]
+
+[ext_resource type="Texture2D" uid="uid://ci0lpylfbuay5" path="res://Sprites/Escenario/Fondo/76689a5d-cc01-4b9e-8d43-17334854d4dc.png" id="1_6adky"]
+[ext_resource type="PackedScene" uid="uid://ltgpyge8svvd" path="res://Escenas/character_body_2d.tscn" id="2_fwjtb"]
+[ext_resource type="PackedScene" uid="uid://bqdpd7vxujwjt" path="res://Escenas/plataforma_circulo.tscn" id="3_r5ywk"]
+[ext_resource type="PackedScene" uid="uid://cwgc11ikyp2ey" path="res://Escenas/plataforma_cuadrado.tscn" id="4_p0hnm"]
+[ext_resource type="PackedScene" uid="uid://m83qpvom6pwt" path="res://Escenas/plataforma_triangulo.tscn" id="5_mmk34"]
+[ext_resource type="Script" uid="uid://ticc5kyl2m1c" path="res://Escenas/volver_selector_nvl_2.gd" id="6_1gcki"]
+[ext_resource type="Texture2D" uid="uid://dyyvjiv66w7rp" path="res://Sprites/Botones/682d5062-6839-4a45-9f2d-f4f6a787401a.png" id="7_wf3hs"]
+[ext_resource type="PackedScene" uid="uid://djrk6elbb5mvy" path="res://Escenas/muro.tscn" id="8_13ipk"]
+[ext_resource type="PackedScene" uid="uid://gxpqiwhuoy83" path="res://tiles/metaNvl4.tscn" id="9_6adky"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jpb1x"]
+size = Vector2(63, 63)
+
+[node name="Nivel2" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(593.5, 326)
+scale = Vector2(38.0625, 21.0417)
+texture = ExtResource("1_6adky")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(593.5, 326)
+scale = Vector2(38.0625, 21.0417)
+texture = ExtResource("1_6adky")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("2_fwjtb")]
+position = Vector2(19, 498)
+
+[node name="PlataformaCirculo12" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(115, 525)
+
+[node name="PlataformaCirculo13" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(68, 525)
+
+[node name="PlataformaCirculo14" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(21, 525)
+
+[node name="PlataformaCirculo16" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(256, 482)
+
+[node name="PlataformaCirculo22" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(704, 482)
+
+[node name="PlataformaCirculo23" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(1092, 429)
+
+[node name="PlataformaCirculo24" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(1145, 397)
+
+[node name="PlataformaCirculo26" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(1145, 369)
+
+[node name="PlataformaCirculo25" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(1002, 367)
+
+[node name="PlataformaCirculo17" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(209, 482)
+
+[node name="PlataformaCirculo18" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(162, 525)
+
+[node name="PlataformaCirculo15" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(1086, 62)
+
+[node name="PlataformaCirculo27" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(1039, 62)
+
+[node name="PlataformaCirculo28" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(992, 62)
+
+[node name="PlataformaCirculo29" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(1133, 62)
+
+[node name="PlataformaCirculo19" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(579, 260)
+
+[node name="PlataformaCirculo20" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(470, 260)
+
+[node name="PlataformaCirculo21" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(362, 260)
+
+[node name="PlataformaCirculo30" parent="." instance=ExtResource("3_r5ywk")]
+position = Vector2(582, 93)
+
+[node name="PlataformaCuadrado15" parent="." instance=ExtResource("4_p0hnm")]
+position = Vector2(563, 601)
+
+[node name="PlataformaCuadrado17" parent="." instance=ExtResource("4_p0hnm")]
+position = Vector2(563, 552)
+
+[node name="PlataformaCuadrado16" parent="." instance=ExtResource("4_p0hnm")]
+position = Vector2(563, 650)
+
+[node name="PlataformaCuadrado18" parent="." instance=ExtResource("4_p0hnm")]
+position = Vector2(1030, 601)
+
+[node name="PlataformaCuadrado19" parent="." instance=ExtResource("4_p0hnm")]
+position = Vector2(1030, 552)
+
+[node name="PlataformaCuadrado22" parent="." instance=ExtResource("4_p0hnm")]
+position = Vector2(1030, 650)
+
+[node name="PlataformaCuadrado10" parent="." instance=ExtResource("4_p0hnm")]
+position = Vector2(563, 505)
+
+[node name="PlataformaCuadrado21" parent="." instance=ExtResource("4_p0hnm")]
+position = Vector2(843, 505)
+
+[node name="PlataformaCuadrado23" parent="." instance=ExtResource("4_p0hnm")]
+position = Vector2(760, 281)
+
+[node name="PlataformaCuadrado24" parent="." instance=ExtResource("4_p0hnm")]
+position = Vector2(712, 281)
+
+[node name="PlataformaCuadrado25" parent="." instance=ExtResource("4_p0hnm")]
+position = Vector2(429, 120)
+
+[node name="PlataformaCuadrado12" parent="." instance=ExtResource("4_p0hnm")]
+position = Vector2(514, 505)
+
+[node name="PlataformaTriangulo5" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(120, 262)
+
+[node name="PlataformaTriangulo18" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(-1, 182)
+
+[node name="PlataformaTriangulo19" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(-1, 146)
+
+[node name="PlataformaTriangulo6" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(166, 262)
+
+[node name="PlataformaTriangulo9" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(32, 229)
+
+[node name="PlataformaTriangulo10" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(78, 229)
+
+[node name="PlataformaTriangulo7" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(212, 262)
+
+[node name="PlataformaTriangulo21" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(192, 172)
+
+[node name="PlataformaTriangulo22" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(301, 131)
+
+[node name="PlataformaTriangulo8" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(258, 262)
+
+[node name="PlataformaTriangulo15" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(611, 620)
+
+[node name="PlataformaTriangulo16" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(657, 620)
+
+[node name="PlataformaTriangulo17" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(703, 620)
+
+[node name="PlataformaTriangulo27" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(749, 620)
+
+[node name="PlataformaTriangulo28" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(795, 620)
+
+[node name="PlataformaTriangulo29" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(841, 620)
+
+[node name="PlataformaTriangulo30" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(887, 620)
+
+[node name="PlataformaTriangulo31" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(933, 620)
+
+[node name="PlataformaTriangulo32" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(979, 620)
+
+[node name="PlataformaTriangulo11" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(365, 488)
+
+[node name="PlataformaTriangulo12" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(412, 488)
+
+[node name="PlataformaTriangulo13" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(983, 488)
+
+[node name="PlataformaTriangulo33" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(912, 310)
+
+[node name="PlataformaTriangulo36" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(853, 95)
+
+[node name="PlataformaTriangulo34" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(866, 310)
+
+[node name="PlataformaTriangulo35" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(724, 96)
+
+[node name="PlataformaTriangulo14" parent="." instance=ExtResource("5_mmk34")]
+position = Vector2(1029, 488)
+
+[node name="VolverSelectorNvl2" type="Area2D" parent="."]
+position = Vector2(48, 42)
+script = ExtResource("6_1gcki")
+
+[node name="Sprite2D" type="Sprite2D" parent="VolverSelectorNvl2"]
+position = Vector2(6, 6)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("7_wf3hs")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="VolverSelectorNvl2"]
+position = Vector2(5.5, 4.5)
+shape = SubResource("RectangleShape2D_jpb1x")
+
+[node name="Muro" parent="." instance=ExtResource("8_13ipk")]
+position = Vector2(-105, -180)
+
+[node name="Muro2" parent="." instance=ExtResource("8_13ipk")]
+position = Vector2(1263, -171)
+
+[node name="Muro3" parent="." instance=ExtResource("8_13ipk")]
+position = Vector2(1006, 762)
+rotation = 1.57723
+
+[node name="Muro6" parent="." instance=ExtResource("8_13ipk")]
+position = Vector2(1254, 756)
+rotation = 1.57723
+
+[node name="Muro4" parent="." instance=ExtResource("8_13ipk")]
+position = Vector2(1267, -136)
+rotation = 1.57723
+
+[node name="Muro5" parent="." instance=ExtResource("8_13ipk")]
+position = Vector2(1007, -139)
+rotation = 1.57723
+
+[node name="MetaNvl1" parent="." instance=ExtResource("9_6adky")]
+position = Vector2(1111, 32)
